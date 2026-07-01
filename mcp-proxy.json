@@ -1,0 +1,55 @@
+{
+    "mcpServers": {
+        "time": {
+            "command": "mcp-server-time",
+            "args": [
+                "--local-timezone=Asia/Karachi"
+            ]
+        },
+        "fetch": {
+            "command": "mcp-server-fetch",
+            "args": []
+        },
+        "ddg-search": {
+            "command": "duckduckgo-mcp-server",
+            "args": []
+        },
+        "browsermcp": {
+            "command": "npx",
+            "args": [
+                "@browsermcp/mcp@latest"
+            ]
+        },
+        "tolaria": {
+            "command": "node",
+            "args": [
+                "/home/tipu/.local/share/tolaria/mcp-server/index.js"
+            ],
+            "env": {
+                "WS_UI_PORT": "9711"
+            }
+        },
+        "trafilatura": {
+            "command": "node",
+            "args": [
+                "/home/tipu/Development/trafilatura/build/index.js"
+            ]
+        },
+        "drawio": {
+            "command": "node",
+            "args": [
+                "/home/tipu/Development/GH/drawio-mcp/mcp-tool-server/src/index.js"
+            ],
+            "env": {
+                "DRAWIO_BASE_URL": "http://127.0.0.1:7001/"
+            }
+        },
+        "dynamic-prompts": {
+            "command": "npx",
+            "args": [
+                "tsx",
+                "/home/tipu/Development/mcp-prompts-server/server.ts"
+            ]
+        }
+    }
+}
