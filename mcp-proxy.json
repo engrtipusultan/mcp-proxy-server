@@ -35,6 +35,13 @@
                 "/home/tipu/Development/trafilatura/build/index.js"
             ]
         },
+        "drawio-app": {
+            "command": "node",
+            "args": [
+                "/home/tipu/Development/GH/drawio-mcp/mcp-app-server/src/index.js",
+                "--stdio"
+            ]
+        },
         "drawio": {
             "command": "node",
             "args": [
