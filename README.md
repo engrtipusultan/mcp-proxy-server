@@ -63,7 +63,7 @@ The draw.io MCP servers let you create and edit diagrams from chat. Two servers 
 
 ### Prerequisites
 
-The `drawio` tool server opens diagrams in the browser. It needs the draw.io Warava UI running locally:
+Install drawio app and tool mcp server. The `drawio` tool server opens diagrams in the browser. It needs the draw.io Warava UI running locally:
 
 ```bash
 ./start-drawio-server.sh
