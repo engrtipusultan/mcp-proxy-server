@@ -35,6 +35,10 @@ MCP_PROXY_CONFIG=/path/to/mcp-proxy.json
 | `drawio-app` | `node ~/Development/GH/drawio-mcp/mcp-app-server/src/index.js --stdio` | Inline diagrams + shape search |
 | `dynamic-prompts` | `npx tsx ~/Development/mcp-prompts-server/server.ts` | Dynamic prompt templates |
 
+## Example
+
+![MCP Servers available in the llama.cpp server](screenshots/Screenshot%20from%202026-07-01%2014-21-09.png)
+
 ## License
 
 Apache 2.0
