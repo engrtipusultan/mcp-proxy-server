@@ -5,12 +5,19 @@ Aggregates multiple MCP servers behind a single SSE endpoint using [`mcp-proxy`]
 **Why:** Some web UI clients (e.g., llama.cpp UI) only support `/sse` or `/mcp` endpoints — they cannot spawn stdio subprocesses. This proxy wraps stdio-based MCP servers behind `http://localhost:8001/sse`, making them accessible to such clients.
 
 ## Usage
+Install mcp-proxy (One time only).
+
+```bash
+uv tool install mcp-proxy
+```
+
+Run wrapper shell script. 
 
 ```bash
 ./mcp-proxy.sh
 ```
 
-All MCP servers are available via SSE at `http://localhost:8001/sse`.
+All MCP servers are available via SSE at `http://127.0.0.1:8001/servers/{actual mcp name}/sse`.
 
 ### Configuration
 
